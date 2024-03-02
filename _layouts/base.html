@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+{% include head.html %}
+</head>
+<body>
+    <header>
+        {% include header.html %}
+    </header>
+    {{ content }}
+    <div id="add">
+        <a href="#" id="pagetop">top</a>
+    </div>
+    {% include body-js.html %}
+</body>
+</html>
