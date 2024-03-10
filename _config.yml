@@ -5,7 +5,6 @@ text: "Github Pages"利用
 baseurl: "" 
 url: "https://kt0228.github.io" 
 repository: "https://github.com/kt0228"
-theme: jekyll-theme-cayman
 
 # Versions of JavaScript
 # Last update on 2023-09-17
