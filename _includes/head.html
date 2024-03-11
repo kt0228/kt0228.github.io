@@ -4,10 +4,14 @@
 <meta name="keywords" content="{% capture tags %}{% for tag in page.tags %}{{ tag | capitalize }}, {% endfor %}{% endcapture %}{{ tags }}">
 
 <!-- bootstrap download -->
+<!--
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@{{ site.bootstrap-version }}/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+-->
 
 <!-- css load -->
-<link href="{{ "/base/style.css" | prepend: site.baseurl }}" rel="stylesheet"/>
+<link href="{{ "/data/detyle.css" | prepend: site.baseurl }}" rel="stylesheet"/>
+<link href="{{ "/style.css" | prepend: site.baseurl }}" rel="stylesheet"/>
+<link href="{{ "/data/deco.css" | prepend: site.baseurl }}" rel="stylesheet"/>
 
 <!-- site custom-->
 <title>{{ page.title }}</title>
