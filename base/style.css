@@ -4,7 +4,7 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
 :root{
     --font-color: #212121;
     --body-background: #adc39f;
-    --rate: 40%;
+    --rate: 45%;
 }
 
 @media all{
