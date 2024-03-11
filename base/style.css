@@ -82,8 +82,7 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
 
 /* 横幅700未満 */
 @media ( max-width : 699.9999999px ){
-    /* 縦並び */
-    @media all{
+    @media all{ /* 縦並び */
         #container{
             margin:0;
             width: 100%;
@@ -94,6 +93,19 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
         }
     }
     
+    @media all{ /* プロフィール */
+        #icon{
+            border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+            width:  calc(180px + 0.2vw);
+            height: calc(180px + 0.2vw);
+            padding: 5px;
+            border: 5px solid #4cccd5; /* 枠線を付加 */
+            background: #b3e8ed;
+        }
+        #name{
+            font-weight: bold;
+        }
+    }
 }
 
 
