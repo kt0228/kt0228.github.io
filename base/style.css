@@ -55,6 +55,12 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
     #right{
         width: calc(100% - var(--rate));
     }
+    #pr{
+        margin-left: calc(10px + 5vw);
+    }
+    #detail{
+        margin-right: calc(10px + 5vw);
+    }
 }
 
 /* プロフィール */
