@@ -41,26 +41,30 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
 
 /* 2カラム */
 @media all{
-    #container{
-        margin:0;
-        width: 100%;
+    @media ( min-width : 700px ){
+        #container{
+            margin:0;
+            width: 100%;
+        }
+        #inner{
+            margin-top: 30px;
+            display: flex;
+        }
+        #left{
+            width: var(--rate);
+        }
+        #right{
+            width: calc(100% - var(--rate));
+        }
+        #pr{
+            margin-left: calc(10px + 5vw);
+            margin-right: 10px;
+        }
+        #detail{
+            margin-right: calc(10px + 5vw);
+        }
     }
-    #inner{
-        margin-top: 30px;
-        display: flex;
-    }
-    #left{
-        width: var(--rate);
-    }
-    #right{
-        width: calc(100% - var(--rate));
-    }
-    #pr{
-        margin-left: calc(10px + 5vw);
-    }
-    #detail{
-        margin-right: calc(10px + 5vw);
-    }
+    
 }
 
 /* プロフィール */
