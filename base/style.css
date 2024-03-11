@@ -49,10 +49,10 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
         margin-top: 30px;
         display: flex;
     }
-    #pr{
+    #left{
         width: var(--rate);
     }
-    #detail{
+    #right{
         width: calc(100% - var(--rate));
     }
 }
