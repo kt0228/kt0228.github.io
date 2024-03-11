@@ -39,6 +39,12 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
 }
 
 /* 2カラム */
+@media all{
+    #container{
+        margin:0;
+        width: 100%;
+    }
+}
 
 /* プロフィール */
 @media all{
@@ -47,6 +53,9 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
         width:  180px;
         height: 180px;
         border: 9px solid linear-gradient(#b3e8ed, #4cccd5); /* 枠線を付加 */
+    }
+    #name{
+        font-weight: bold;
     }
 }
 

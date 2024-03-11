@@ -8,11 +8,17 @@
             {% include header.html %}
         </header>
         <div id="container">
-            <div id="pr">
-                {% include pr.html %}
-            </div>
-            <div id="detail">
-                {{ content }}
+            <div id="inner">
+                <div id="left">
+                    <div id="pr">
+                        {% include pr.html %}
+                    </div>
+                </div>
+                <div id="right">
+                    <div id="detail">
+                        {{ content }}
+                    </div>
+                </div>
             </div>
         </div>
         {{ content }}
