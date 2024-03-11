@@ -7,7 +7,7 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
     --rate: 45%;
 }
 
-@media all{
+@media all{ /* 共通設定 */
     .selector-for-some-widget {
         box-sizing: content-box;
     }
@@ -21,27 +21,25 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
         text-decoration: none;
     }
     
-}
-
-/* ヘッダー */
-@media all{
-    #header-inner{
-        text-align: center;
-        padding: 0.5em 1em;
-    }
-    #header-title{
-        margin: 0;
-        font-weight: bold;
-    }
-    #header-text{
-        margin: 0;
-        font-weight: bold;
+    @media all{ /* ヘッダー */
+        #header-inner{
+            text-align: center;
+            padding: 0.5em 1em;
+        }
+        #header-title{
+            margin: 0;
+            font-weight: bold;
+        }
+        #header-text{
+            margin: 0;
+            font-weight: bold;
+        }
     }
 }
 
-/* 2カラム */
-@media all{
-    @media ( min-width : 700px ){
+
+@media ( min-width : 700px ){ /* 横幅700以上 */
+    @media all{ /* 2カラム */
         #container{
             margin:0;
             width: 100%;
@@ -64,25 +62,42 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
             margin-right: calc(10px + 5vw);
         }
     }
+
+    @media all{ /* プロフィール */
+        #icon{
+            border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+            width:  calc(180px + 0.2vw);
+            height: calc(180px + 0.2vw);
+            margin-left: 5px;
+            padding: 5px;
+            border: 5px solid #4cccd5; /* 枠線を付加 */
+            background: #b3e8ed;
+        }
+        #name{
+            font-weight: bold;
+            margin-left: 45px;
+        }
+    }
+}
+
+/* 横幅700未満 */
+@media ( max-width : 699.9999999px ){
+    /* 縦並び */
+    @media all{
+        #container{
+            margin:0;
+            width: 100%;
+        }
+        #inner{
+            margin-top: 30px;
+            display: flex;
+        }
+    }
     
 }
 
-/* プロフィール */
-@media all{
-    #icon{
-        border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
-        width:  calc(180px + 0.2vw);
-        height: calc(180px + 0.2vw);
-        margin-left: 5px;
-        padding: 5px;
-        border: 5px solid #4cccd5; /* 枠線を付加 */
-        background: #b3e8ed;
-    }
-    #name{
-        font-weight: bold;
-        margin-left: 45px;
-    }
-}
+
+
 
 /* ページトップ */
 @media all{
