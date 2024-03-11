@@ -53,7 +53,6 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
 /* プロフィール */
 @media all{
     #icon{
-        background-image: url("icon.png");
         border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
         width:  180px;
         height: 180px;
