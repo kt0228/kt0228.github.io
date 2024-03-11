@@ -1,8 +1,8 @@
 ---
 layout: base
 title: たつやのプロフィール
-description: ホームページ
+description: Test Page
 ---
 ## 自己紹介
-当ブログでは、私が様々なコンテンツに挑戦して得られたことを書き留めたい
+
 
