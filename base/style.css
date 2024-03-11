@@ -56,7 +56,9 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
         border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
         width:  180px;
         height: 180px;
-        border: 9px solid linear-gradient(#b3e8ed, #4cccd5); /* 枠線を付加 */
+        padding: 1vw;
+        border: 1vw solid #4cccd5; /* 枠線を付加 */
+        background: #b3e8ed;
     }
     #name{
         font-weight: bold;
