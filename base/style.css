@@ -4,6 +4,7 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
 :root{
     --font-color: #212121;
     --body-background: #adc39f;
+    --rate: 40%;
 }
 
 @media all{
@@ -47,6 +48,12 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
     #inner{
         margin-top: 30px;
         display: flex;
+    }
+    #pr{
+        width: var(--rate);
+    }
+    #detail{
+        width: calc(100% - var(--rate));
     }
 }
 
