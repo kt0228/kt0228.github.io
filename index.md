@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: default
 title: たつやのプロフィール
 description: Test Page
 ---
