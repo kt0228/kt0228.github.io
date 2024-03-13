@@ -1,3 +1,13 @@
+/*
+レスポンシブ区間 600 1024
+@media ( min-width : 1024px ){
+}
+@media ( max-width : 1023.999px ){
+}
+@media ( max-width : 600px ){
+}
+*/
+
 :root{
     --font-color: #212121;
     --body-background: #adc39f;
@@ -9,9 +19,7 @@
         box-sizing: content-box;
     }
     body{
-        /*
         font-family: "游ゴシック体", "Yu Gothic", "YuGothic", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-        */
         background: var(--body-background);
         color: var(--font-color);
     }
@@ -31,80 +39,60 @@
         }
         #header-text{
             margin: 0;
-            font-weight: bold;
         }
     }
 }
 
-
-@media ( min-width : 700px ){ /* 横幅700以上 */
-    @media all{ /* 2カラム */
-        #container{
-            margin:0;
-            width: 100%;
-        }
-        #inner{
-            margin-top: 30px;
-            display: flex;
-        }
-        #left{
-            width: var(--rate);
-        }
-        #right{
-            width: calc(100% - var(--rate));
-        }
-        #pr{
-            margin-left: calc(10px + 5vw);
-            margin-right: 10px;
-        }
-        #detail{
-            margin-right: calc(10px + 5vw);
-        }
+@media all{ /* プロフィール */
+    #icon{
+        border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+        padding: 5px;
+        border: 5px solid #4cccd5; /* 枠線を付加 */
+        background: #b3e8ed;
     }
-
-    @media all{ /* プロフィール */
-        #icon{
-            border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
-            width:  calc(180px + 0.2vw);
-            height: calc(180px + 0.2vw);
-            margin-left: 5px;
-            padding: 5px;
-            border: 5px solid #4cccd5; /* 枠線を付加 */
-            background: #b3e8ed;
-        }
-        #name{
-            font-weight: bold;
-            margin-left: 45px;
-        }
+    #name{
+        font-weight: bold;
+    }
+    @media ( min-width : 1024px ){
+        #icon{margin-left: 5px;width:calc(180px + 0.2vw);height:calc(180px + 0.2vw);}
+        #name{margin-left: 45px;}
+    }
+    @media ( max-width : 1023.999px ){
+        #icon{margin-left: 5px;width:calc(154px + 2vw);height:calc(154px + 2vw);}
+        #name{margin-left: 45px;}
+    }
+    @media ( max-width : 600px ){
+        #icon{margin-left: 0px;width:calc(100px + 10vw);height:calc(100px + 10vw);}
+        #name{margin-left: 0px;}
     }
 }
 
-/* 横幅700未満 */
-@media ( max-width : 699.9999999px ){
-    @media all{ /* 縦並び */
-        #container{
-            margin:0;
-            width: 100%;
-        }
-        #inner{
-            margin-top: 30px;
-        }
+@media all{ /* サイト形式 */
+    #container{margin:0;width:100%;}
+    @media ( min-width : 1024px ){
+        #inner{margin-top: 30px;display: flex;}
+        #left{width: 50%;}
+        #right{width: 50%;}
+        #pr{margin-left: calc(10px + 5vw);margin-right: 20px;}
+        #detail{margin-right: calc(10px + 5vw);}
     }
-    
-    @media all{ /* プロフィール */
-        #icon{
-            border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
-            width:  calc(180px + 0.2vw);
-            height: calc(180px + 0.2vw);
-            padding: 5px;
-            border: 5px solid #4cccd5; /* 枠線を付加 */
-            background: #b3e8ed;
-        }
-        #name{
-            font-weight: bold;
-        }
+    @media ( max-width : 1023.999px ){
+        #inner{margin-top: 30px;display: flex;}
+        #left{width: 50%;}
+        #right{width: 50%;}
+        #pr{margin-left: calc(10px + 5vw);margin-right: 20px;}
+        #detail{margin-right: calc(10px + 5vw);}
+    }
+    @media ( max-width : 600px ){
+        #inner{margin-top:calc(24px + 1vw);display: block;}
+        #left{width: 100%;text-align: center;}
+        #right{width: 100%;}
+        #pr{margin-left: calc(10px + 5vw);margin-right: calc(10px + 5vw);}
+        #detail{margin-left: calc(10px + 5vw);margin-right: calc(10px + 5vw);}
     }
 }
+
+
 
 
 
