@@ -1,6 +1,6 @@
 ---
 layout: default
-title: たつやのプロフィール
+title: やなぎのプロフィール
 description: Test Page
 ---
 ## 自己紹介
