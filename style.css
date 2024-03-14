@@ -72,21 +72,21 @@
     @media ( min-width : 1024px ){
         #inner{margin-top: 30px;display: flex;}
         #left{width: 50%;}
-        #right{width: 50%;}
+        #right{width: 50%;margin-top: 0;}
         #pr{margin-left: calc(10px + 5vw);margin-right: 20px;}
         #detail{margin-right: calc(10px + 5vw);}
     }
     @media ( max-width : 1023.999px ){
         #inner{margin-top: 30px;display: flex;}
         #left{width: 50%;}
-        #right{width: 50%;}
+        #right{width: 50%;margin-top: 0;}
         #pr{margin-left: calc(10px + 5vw);margin-right: 20px;}
         #detail{margin-right: calc(10px + 5vw);}
     }
     @media ( max-width : 600px ){
         #inner{margin-top:calc(24px + 1vw);display: block;}
         #left{width: 100%;text-align: center;}
-        #right{width: 100%;}
+        #right{width: 100%;margin-top: 10px;}
         #pr{margin-left: calc(10px + 5vw);margin-right: calc(10px + 5vw);}
         #detail{margin-left: calc(10px + 5vw);margin-right: calc(10px + 5vw);}
     }
