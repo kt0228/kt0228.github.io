@@ -31,9 +31,13 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
         padding: 5px;
         border: 5px solid #4cccd5; /* 枠線を付加 */
         background: #b3e8ed;
+        margin-top: 40%;
     }
     #myname{
         font-weight: bold;
+    }
+    @media ( max-width : 849.9999px ){
+        #icon{margin-top: 10%;}
     }
 }
 
