@@ -1,7 +1,27 @@
-<meta charset="UTF-8">
-<title>やぎたつのホーム</title>
-<meta name="description" content="プロフィールページ">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="keywords" content="{% capture tags %}{% for tag in page.tags %}{{ tag | capitalize }}, {% endfor %}{% endcapture %}{{ tags }}">
 
-<link rel="stylesheet" href="style.css" type="text/css">
+<!-- bootstrap download -->
+<!--
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@{{ site.bootstrap-version }}/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+-->
+
+<!-- css load -->
+<link href="{{ "/data/detyle.css" | prepend: site.baseurl }}" rel="stylesheet"/>
+<!--<link href="{{ "/data/bootstrap.min.css" | prepend: site.baseurl }}" rel="stylesheet"/>-->
+<link href="{{ "/data/deco.css" | prepend: site.baseurl }}" rel="stylesheet"/>
+<link href="{{ "/style.css" | prepend: site.baseurl }}" rel="stylesheet"/>
+
+
+<!-- site custom-->
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}" />
+<link rel="icon" href="/favicon.png" />
+<link rel="apple-touch-icon" href="/favicon.png" />
+
+<!-- javascript load -->
+{% include head-tool.html %}
+
+
