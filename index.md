@@ -1,7 +1,7 @@
 ---
-layout: default
-title: やなぎのプロフィール
-description: Test Page
+layout: home
+title: なぎたつのプロフィール
+description: プロフィールについて記載
 ---
 ## 経験言語
 Python, Java, C++, C#
