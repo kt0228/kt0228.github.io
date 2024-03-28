@@ -55,7 +55,7 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
     #container{margin:0;width:100%;}
 
     #sub{width: 300px;position: fixed;}
-    #main{width: calc(100% - 300px);margin-top: 7vh;float: right;}
+    #main{width: calc(100% - 300px);margin-top: 7vh;margin-bottom: 20vh;float: right;}
     #name{text-align: center;}
     #about{padding: 0 10vw 0 10vw;}
     @media ( max-width : 849.9999px ){
