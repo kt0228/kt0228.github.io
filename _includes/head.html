@@ -5,6 +5,7 @@
         <meta name="keywords" content="{% capture tags %}{% for tag in page.tags %}{{ tag | capitalize }}, {% endfor %}{% endcapture %}{{ tags }}">
 
         <!-- css load -->
+        <link href="{{ "/style/deco.css" | prepend: site.baseurl }}" rel="stylesheet"/>
         <link href="{{ "/style/home.css" | prepend: site.baseurl }}" rel="stylesheet"/>
         <!--
         <link href="{{ "/data/detyle.css" | prepend: site.baseurl }}" rel="stylesheet"/>
