@@ -14,23 +14,17 @@ NN：なぎたつ
 # 経験言語
 
 <div class="languages">
-    <i class="fab fa-python"><p>Python</p></i>
-    <i class="fab fa-html5"><p>HTML</p></i>
-    <i class="fab fa-css3-alt"><p>CSS</p></i>
+    <i class="devicon-python-plain"></i>
+    <i class="devicon-java-plain"></i>
+    <i class="devicon-cplusplus-plain"></i>
+    <i class="devicon-csharp-plain"></i>
+    <i class="devicon-html5-plain"></i>
+    <i class="devicon-css3-plain"></i>
 </div>
-- 画像生成アルゴリズムによる伝搬伝搬の推定(卒業研究)
-- 日本硬貨が並べられた画像から合計金額を算出(授業：グループ)
+Python, HTML5, CSS3は独学で学んでいます。
+それ以外のJava, C++, C#は大学の授業で触れた程度です。  
 
-# テスト
+# 作成物
 
-asgiefefkkverjjehg
-
-# h1
-
-## h2
-
-### h3
-
-#### h4
-
-##### h5
+画像から日本硬貨が合計いくらあるか算出するコード(C#,授業制作,グループ)  
+画像生成アルゴリズムを使用した電波伝搬の推定(Python,卒業研究,個人)
