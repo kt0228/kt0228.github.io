@@ -1,0 +1,157 @@
+/* ▼初期化▼ */
+abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,main,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{text-decoration:none}*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box}
+
+:root{
+    --main-sub: 300px;
+    --font-color: #7e7177;
+    --bg-body: #f6f5f5;
+    --bg-content: #ffffff;
+    --main-color: #aeddcd;
+    --main-font: #ffffff;
+    --sub-color: #ff9d76;
+    --sub-font: #ffffff;
+}
+
+/*---------- ▼全体設定▼ ----------*/
+@media all{
+    .selector-for-some-widget {
+        box-sizing: content-box;
+    }
+    body{
+        font-family: "游ゴシック体", "Yu Gothic", "YuGothic", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        background: var(--bg-body);
+        color: var(--font-color);
+    }
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
+    
+}
+/* ヘッダー */
+@media all{
+    #header-inner{
+        text-align: center;
+        padding: 0.5em 1em;
+        background: var(--main-color);
+    }
+    #header-title{
+        margin: 0;
+        font-weight: bold;
+    }
+    #header-text{
+        margin: 0;
+        font-weight: bold;
+    }
+}
+/* メニュー */
+@media all{
+    #menu{
+        list-style: none;
+        background:var(--sub-color);
+        text-align:center;
+        bottom:0;left:0;
+        width:100%;
+        color: var(--sub-font);
+    }
+    #menu li{
+        display: inline-block;
+    }
+    #menu li a{
+        text-decoration: none;
+        padding:0 5px;
+    }
+}
+/* 2カラム */
+@media all{
+    #container{
+        margin:0;
+        width: 100%;
+    }
+    #main-inner{
+        margin-top: 30px;
+        display: flex;
+    }
+    #main-content{
+        padding: 0.5em 1.5em;
+        background: var(--bg-content);
+        margin-left: 3%;
+        width: calc(94% - var(--main-sub));
+        flex-shrink: 0;
+    }
+    #sub-content{
+        padding: 0.5em 1.5em;
+        background: var(--bg-content);
+        margin-right: 3%;
+        width: var(--main-sub);
+        flex-shrink: 0;
+    }
+    @media ( min-width : 1100px ) {
+        #main-content{
+            width: calc(91% - var(--main-sub));
+        }
+        #sub-content{
+            width: calc(var(--main-sub) + 3%)
+        }
+    }
+    @media ( max-width : 800px ) {
+        #main-content{
+            margin: 0;
+            width: calc(103% - var(--main-sub));
+        }
+        #sub-content{
+            margin: 0;
+            width: calc(var(--main-sub) - 3%)
+        }
+    }
+    @media ( max-width : 700px ) {
+        #main-content{
+            width: 100%;
+        }
+        #sub-content{
+            display: none;
+        }
+    }
+}
+/* メインコンテンツ */
+@media all{
+    #headline{
+        margin-bottom: 1em;
+    }
+    #headline-title{
+        margin: 0;
+        font-weight: bold;
+    }
+}
+/* サイドバー */
+@media all{
+
+}
+/* ページトップ */
+@media all{
+    #pagetop {/* 位置はscroll.jsで設定 */
+        background:rgba(0,0,0,.8);/* 背景 */
+        color:#b9e1d8;/* 色 */
+        border:3px solid #b9e1d8;
+        box-shadow:0 1px 5px #ccc;
+        height:50px;width:50px; /* 大きさ */
+        border-radius:30px;
+        box-sizing:border-box;
+        display:block;
+        line-height:16px;
+        padding-top:22px;
+        position:fixed;
+        text-align:center;
+        z-index:10
+    }
+    #pagetop:before {
+        content:'\25B2';
+        font-size:14px;
+        position:absolute;
+        left:0;top:7px;
+        width:100%
+    }
+    #pagetop:hover {
+        background:rgba(255,255,255,.8)
+    }
+}
