@@ -12,9 +12,13 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
 
 @media all{ /* 共通設定 */
     .languages{
+        display: table;
         font-size: 100px;
     }
-    .languages span{
+    .languages i{
+        display: inline-block;
+    }
+    .languages p{
         text-align: center;
         font-size:max(16px,calc(min(20px,13px + 1vw)));
     }
