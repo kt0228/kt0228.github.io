@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="open"><span id="open-icon"></span></div>
+            <header>
+                {% include header.html %}
+            </header>
+            <div id="container">
+                <div id="main">
+                    <div id="main-inner">
+                        {{ content }}
+                        <div class="space"></div>
+                    </div>
+                </div>
+                <div id="side-bg"></div>
+                <div id="sub" class="box">
+                    <div id="sub-inner">
+                        <div id="menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="{{ site.baseurl }}">Top</a></li>
+                                    <li><a href="{{ site.baseurl | append: '/about'}}">About</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div id="me">
+                            <img src="{{ site.baseurl | append: 'favicon.png' }}">
+                            <span id="name">こやたつ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <footer>
+                {% include footer.html %}
+            </footer>
+        </div>
+        {% include script.html %}
+    </body>
+</html>

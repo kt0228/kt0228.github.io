@@ -1,0 +1,15 @@
+---
+---
+
+html{
+    font-family: 'Segoe UI','游ゴシック Medium','Yu Gothic Medium','游ゴシック体',YuGothic,'Hiragino Kaku Gothic ProN','メイリオ';
+    font-size: max(16px,min(20px,calc(16px + (100vw - 500px) * 0.01)));
+}
+
+@import 'default';
+@import 'theme1';
+@import 'font-size';
+
+.space{
+    height: 80vh;
+}

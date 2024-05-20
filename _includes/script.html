@@ -1,0 +1,4 @@
+
+{% for script in page.script %}
+<script src="{{ '/assets/js/' | append: script | append: '.js' | relative_url }}"></script>
+{% endfor %}

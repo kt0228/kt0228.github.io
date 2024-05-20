@@ -1,0 +1,48 @@
+---
+---
+
+html{
+    font-family: 'Segoe UI','游ゴシック Medium','Yu Gothic Medium','游ゴシック体',YuGothic,'Hiragino Kaku Gothic ProN','メイリオ';
+    font-size: max(16px,min(20px,calc(16px + (100vw - 500px) * 0.01)));
+}
+
+@import 'default';
+@import 'theme1';
+@import 'font-size';
+
+.space{
+    height: 80vh;
+}
+section{
+    ul {
+        list-style-type: none; /* リストのデフォルトの箇条書きスタイルを削除 */
+        padding: 0; /* パディングを削除 */
+    }
+    
+    ul li {
+        margin-bottom: 0.5em; /* 各リスト項目の間にスペースを追加 */
+    }
+    
+    ul li a {
+        display: inline-block; /* ブロックレベルの表示に設定 */
+        font-size: 1.2em; /* フォントサイズを調整 */
+        font-weight: bold; /* 太字にする */
+        color: #5fb69c; /* リンクの色を青に設定 */
+        text-decoration: none; /* 下線を削除 */
+        margin-bottom: 0em; /* 下にスペースを追加 */
+        width: auto;
+    }
+    
+    ul li a:hover {
+        text-decoration: underline; /* ホバー時に下線を追加 */
+    }
+    
+    ul li p {
+        margin: 0; /* デフォルトのマージンを削除 */
+        padding-left: 1em; /* 左側にパディングを追加してインデントを作る */
+        color: #555; /* テキストの色をダークグレーに設定 */
+        font-size: 1em; /* フォントサイズを設定 */
+    }
+}
+
+
