@@ -1,0 +1,269 @@
+:root{
+    --font_color: #8c8673;
+    --background_color: #f1f1f1;
+    --background_color2: #768355;
+}
+
+body{
+    background-color: var(--background_color2);
+    color: var(--font_color);
+    letter-spacing:.1em;
+    line-height:1.5;
+}
+
+#wrapper{
+    background-color: var(--background_color);
+    position: relative;
+}
+
+header{
+    position:fixed;
+    left:0;top:0;
+    z-index:5;
+    font-family: 'Times New Roman';
+    text-align: center;
+    #header-bg{
+        /*background:url(../../image/icon.svg) no-repeat 50% 50%;*/
+        height:190px;
+        width:300px;
+        #header-inner{
+            position:absolute;
+            top:50%;left:50%;
+            width:220px;
+            -ms-transform:translate(-50%, -50%);
+            -webkit-transform:translate(-50%, -50%);
+            transform:translate(-50%, -50%);
+        }
+    }
+}
+
+#main{
+    width: 100%;
+    padding-left: 300px;
+    #main-inner{
+        padding:20px 20px 50px
+    }
+}
+
+#side{
+    color: var(--background_color2);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 300px;
+    #side-inner{
+        background:url(back01.gif);
+        border-left:2px solid var(--background_color2);
+        border-right:2px solid var(--background_color2);
+        margin:0 auto;
+        padding:190px 10px 20px;
+        width:240px;
+        min-height:100%
+    }
+}
+
+#menu{
+    background-color: var(--background_color2);
+    display: block;
+    margin:10px -10px 20px;
+    text-align:center;
+    nav li{
+        color:#fff;
+        display:inline-block;
+        font-weight:700;
+        margin:5px 0
+    }
+    nav li a{
+        text-decoration: none;
+        color: inherit;
+        display:inline-block;
+        padding:0 5px
+    }
+    nav li a:hover{
+        background:rgba(238,234,214,.6);
+        color:#768355
+    }
+    nav > ul > li + li::before{
+        content:"│";
+        font-size:.8em
+    }
+}
+
+#me{
+    text-align: center;
+    img{
+        margin: auto;
+        border-radius: 50%;
+        width: 130px;
+        height: 130px;
+    }
+    #name{
+        display: block;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+h1{
+    color: var(--background_color2);
+    letter-spacing:.1em;
+}
+h2{
+    margin:0 0 0 -10px;
+    border-bottom:2px solid #aaa697
+}
+h3{
+    padding-left: 5px;
+    border-left: solid 5px #b1ba96;
+}
+
+#open{display:none}
+.fonticon{
+    text-align: center;
+    display: inline-block;
+    a{
+        display: block;
+        position: relative;
+    }
+    i{
+        padding: 10px;
+        border-radius: 15px;
+        background-color: var(--background_color2);
+        color: var(--background_color);
+        font-size: 50px;
+    }
+    i:hover{
+        background-color: var(--font_color);
+        color: var(--background_color);
+    }
+    div{
+        font-size: 13px;
+        letter-spacing: 0;
+    }
+}
+.disabled{
+    pointer-events: none;
+    a::before{
+        content:"×";
+        font-size: 100px;
+        position: absolute;
+        top: -75%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #d68a57;
+    }
+}
+.devicon{
+    text-align: center;
+    i{
+        font-size: 75px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 799.999px){
+    body{
+        line-height:1.7;
+    }
+    #wrapper{
+        background:#fff url(back01.gif);
+        border-top:20px solid var(--background_color2);
+        border-bottom:20px solid var(--background_color2);
+        padding:10px 20px 60px
+    }
+    header{
+        text-align: left;
+        position:static;
+        #header-bg{
+            position: static;
+            background:none;
+            height:auto;width:auto;
+            #header-inner{
+                position:static;
+                transform: none;
+                padding:0 40px 10px 0;
+                min-height:60px;
+            }
+        }
+    }
+    #main{
+        padding: 0;
+        position: static;
+        #main-inner{
+            background:#fff; 
+            border-radius:10px;
+            box-shadow:2px 2px 2px #ccc;
+            padding:10px 10px 40px 15px;
+        }
+    }
+    #side{
+        min-height:inherit;
+        position: fixed;
+        top:0;right:0;
+        line-height:2;
+        height:100%;width:300px;
+        padding:80px 10px 10px;
+        background:rgba(255,255,243,.9);
+        -ms-transform:translate(300px);
+        -webkit-transform:translate(300px);
+        transform:translate(300px);
+        transition:.3s;
+        z-index:1000;
+        #side-inner{
+            background: none;
+            height:100%;width:100%;
+            border: 0;
+            padding:0 10px;
+            min-height:inherit;
+            overflow:auto;
+            -webkit-overflow-scrolling:touch;
+        }
+    }
+    #open{
+        background:#fff; /* 背景色 */
+        border-radius:20px;
+        box-shadow:2px 2px 2px #ccc;
+        display:inline-block;
+        position:absolute;
+        right:20px;top:20px; 
+        height:40px;width:40px; 
+        z-index:1001
+    }
+    #side.open{
+        -ms-transform:translate(0);
+        -webkit-transform:translate(0);
+        transform:translate(0);
+    }
+    #side-bg{
+        display:none;position:fixed;
+        height:100%;width:100%;
+        top:0;left:0;z-index:999;
+        cursor:pointer;
+    }
+    #open.buttonclose{position:fixed}
+    #open-icon,#open-icon:before,#open-icon:after{background:#8c8673}
+    #open-icon{display:block;margin:-1px 0 0 -10px;position:absolute;top:50%;left:50%;height:2px;width:20px}
+    #open-icon:before,#open-icon:after{content:"";display:block;position:absolute;top:50%;left:0;height:2px;width:20px;transition:.3s}
+    #open-icon:before{margin-top:-8px}
+    #open-icon:after{margin-top:6px}
+    #open .close{background:transparent}
+    #open .close:before,#open .close:after{margin-top:0}
+    #open .close:before{-ms-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
+    #open .close:after{-ms-transform:rotate(-135deg);-webkit-transform:rotate(-135deg);transform:rotate(-135deg)}
+    #side-bg{
+        background:rgba(51,51,51,.5)/* 周りの背景色 */
+    }
+    #menu{
+        background:none;
+        margin:10px;
+        nav li a{
+            background:var(--background_color2);
+            border-radius:5px;
+            margin:5px;
+            padding:0 5px;
+        }
+        nav > ul > li + li::before{
+            content:""
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    font-family: 'Segoe UI','游ゴシック Medium','Yu Gothic Medium','游ゴシック体',YuGothic,'Hiragino Kaku Gothic ProN','メイリオ';
+    font-size: max(16px,min(20px,calc(16px + (100vw - 500px) * 0.01)));
+  }
+  
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  ol,ul{
+    list-style: none;
+  }
+  .contents{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+  section{
+    margin-bottom: 20px;
+  }
+  
+  h1{font-size: max(35px,min(50px,calc(35px + (100vw - 500px) * 0.03)));font-weight: bold;}
+  h2{font-size: max(22px,min(30px,calc(22px + (100vw - 500px) * 0.03)));font-weight: bold;}
+  h3{font-size: max(20px,min(26px,calc(20px + (100vw - 500px) * 0.025)));font-weight: bold;}
+  h4{font-size: max(20px,min(26px,calc(20px + (100vw - 500px) * 0.02)));font-weight: bold;}
+  h5{font-size: max(20px,min(24px,calc(20px + (100vw - 500px) * 0.01)));font-weight: bold;}
+  h6{font-size: max(18px,min(22px,calc(18px + (100vw - 500px) * 0.01)));font-weight: bold;}
+  p,.p{font-size: max(16px,min(20px,calc(16px + (100vw - 500px) * 0.01)));}
+  
+  .space{height: 80vh;}
